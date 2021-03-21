@@ -1,0 +1,10 @@
+<div class="container-fluid mt-5 categories-wrapper">
+    <h1 class="font-weight-bold">Recipes Cuisines</h1>
+    <carousel cellsToShow="4" overflowCellsLimit="4" autoplay="true" borderRadius="5" pauseOnHover="true"
+        cellWidth="100">
+        <div class="carousel-cell" *ngFor="let img of images" (click)="goToCategory(img)">
+            <img src={{img.path}}>
+            <h3>{{img.name}}</h3>
+        </div>
+    </carousel>
+</div>

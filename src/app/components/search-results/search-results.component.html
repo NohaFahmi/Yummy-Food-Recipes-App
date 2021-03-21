@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 search-container">
+            <div class="input-group input-group-lg col-md-4 input-container">
+                <input class="form-control py-2 search-input" type="search" id="search-input"
+                    placeholder="search for recipes" [(ngModel)]="keywords" *ngIf="valid;else invalid" />
+                <ng-template #invalid>
+                    <input type="text" class="form-control is-invalid" aria-label="Text input with dropdown button"
+                        placeholder="Search by keywords" [(ngModel)]="keywords" />
+                </ng-template>
+                <span class="input-group-append">
+                    <button class="btn btn-white search-btn" type="button" (click)="handleSearch()">
+                        <fa-icon [icon]="faSearch"></fa-icon>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="page-heading leftaddresscard"> &nbsp; Search Results For: "{{query}}"</h2>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="row justify-content-around">
+        <app-recipe *ngFor="let item of recipesList" [recipe]="item" (click)="goToDetails(item.id)"></app-recipe>
+        <!-- <app-recipe [recipe]="item"></app-recipe> -->
+
+    </div>
+</div>

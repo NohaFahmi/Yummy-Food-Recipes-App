@@ -1,0 +1,29 @@
+.card-content-container {
+    display: flex;
+    flex-direction: column;
+}
+.card-content-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content-container h3 {
+    color: #B30733;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-content-container span small {
+    color: #2E4765;
+}
+.recipe-card {
+    width: 350px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.recipe-card:hover {
+    transition: all .3s linear;
+    box-shadow: 5px 5px 5px lightgray;
+}

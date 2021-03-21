@@ -1,0 +1,50 @@
+<mat-card class="recipe-card" [id]="details.id">
+    <img mat-card-image [src]="details.image" [alt]="details.title">
+
+    <mat-card-content>
+        <div class="card-content-container">
+            <div>
+                <h3>{{details.title}}</h3>
+            </div>
+            <div>
+                <mat-chip-list aria-label="Fish selection">
+                    <mat-chip appStyleTag *ngIf="cuisine !== ''">{{cuisine}}</mat-chip>
+                    <!-- <mat-chip color="accent">{{details.diets[0]}}</mat-chip>  -->
+                </mat-chip-list>
+
+                <span class="text-muted font-weight-bold">
+                    <fa-icon [icon]="faClock" class="pr-2"></fa-icon> {{details.readyInMinutes}} min
+                </span>
+            </div>
+
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<!-- <fa-icon [icon]="faHeart" style="font-size: 20px; color: #FF0043;"></fa-icon> -->
+
+<!-- <mat-card class="recipe-card" id="1">
+
+    <img mat-card-image src="/assets/images/food.jpg">
+
+    <mat-card-content>
+        <div class="card-content-container">
+            <div>
+                <h3>Chicken with Rice</h3>
+
+            </div>
+            <div>
+                <mat-chip-list aria-label="Fish selection">
+                    <mat-chip color="primary" appStyleTag><span>{{["Z", "Egypt"] | tagsPipe}}</span></mat-chip>
+                   <mat-chip color="accent">Free</mat-chip> 
+
+</mat-chip-list>
+
+<span class="text-muted font-weight-bold">
+    <fa-icon [icon]="faClock" class="pr-2"></fa-icon> 30 min
+</span>
+</div>
+
+</div>
+</mat-card-content>
+</mat-card> -->

@@ -1,0 +1,17 @@
+.header-wrapper {
+    position: relative;
+}
+
+.search-bar {
+    /* border: 5px solid white; */
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: 40%;
+}
+.input-group {
+   flex-wrap: nowrap  !important;
+}
+.search-btn {
+    width: 80px  !important;
+}
