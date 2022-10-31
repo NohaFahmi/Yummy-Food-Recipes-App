@@ -1,4 +1,4 @@
-# Yummy: Search for Food Recipes | Almentor Interview Task
+# Yummy: Search for Food Recipes | Interview Task for [Almentor.net](https://about.almentor.net/home)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 ## App Idea
