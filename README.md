@@ -10,7 +10,7 @@ This app built using [Spoonacular API](https://spoonacular.com/food-api/)
 
 ## Demo
 - You can preview a live demo for the app from [here](https://yummy-food-recipes.netlify.app/)
-- 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
